@@ -1,0 +1,122 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Arial', sans-serif;
+}
+
+body {
+  background: #ffffff;
+  color: #111;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 40px;
+  border-bottom: 1px solid #eee;
+}
+
+.logo {
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+
+nav a {
+  margin-left: 20px;
+  text-decoration: none;
+  color: #111;
+  font-size: 14px;
+}
+
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 60px 40px;
+}
+
+.hero-text h1 {
+  font-size: 48px;
+  margin-bottom: 10px;
+}
+
+.hero-text p {
+  margin-bottom: 20px;
+  color: #555;
+}
+
+button {
+  padding: 12px 24px;
+  border: none;
+  background: #111;
+  color: #fff;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  background: #333;
+}
+
+.hero-img img {
+  width: 300px;
+  border-radius: 10px;
+}
+
+.products {
+  padding: 60px 40px;
+}
+
+.products h2 {
+  margin-bottom: 30px;
+}
+
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+}
+
+.card {
+  padding: 20px;
+  border: 1px solid #eee;
+  text-align: center;
+}
+
+.contact {
+  padding: 60px 40px;
+  background: #f9f9f9;
+}
+
+.contact form {
+  max-width: 300px;
+}
+
+.contact input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+.footer {
+  text-align: center;
+  padding: 20px;
+  font-size: 14px;
+  color: #777;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .hero {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .hero-img img {
+    margin-top: 30px;
+  }
+}
+
+
+
