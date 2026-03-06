@@ -6,8 +6,10 @@
 }
 
 body {
-  background: #ffffff;
-  color: #111;
+  background: #F2F2F2; /* Este es el gris suave que hace resaltar los productos */
+  color: #111111;    /* Mantenemos el texto casi negro para máxima legibilidad */
+  margin: 0;         /* Asegúrate de que no haya bordes blancos extraños */
+  font-family: sans-serif; /* O la tipografía que estés usando */
 }
 
 .header {
