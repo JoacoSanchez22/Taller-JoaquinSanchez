@@ -101,11 +101,80 @@ button:hover {
   margin-bottom: 10px;
 }
 
+/* =============================================
+   REDES SOCIALES Y FOOTER
+   ============================================= */
 .footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+  padding: 40px 20px;
+  background: #111111; /* Fondo negro para un estilo urbano y minimalista */
+  color: #ffffff;
+}
+
+.social-links {
+  display: flex;
+  gap: 25px;
+  margin-bottom: 10px;
+}
+
+.social-links a {
+  color: #ffffff;
+  font-size: 24px;
+  text-decoration: none;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.social-links a:hover {
+  color: #888888; /* Se vuelve gris al pasar el mouse */
+  transform: translateY(-5px); /* Pequeño salto hacia arriba */
+}
+
+.footer p {
+  font-size: 13px;
+  color: #777777;
+}
+
+/* =============================================
+   BOTÓN FLOTANTE WHATSAPP
+   ============================================= */
+.whatsapp-float {
+  position: fixed;
+  width: 60px;
+  height: 60px;
+  bottom: 30px;
+  right: 30px;
+  background-color: #25d366; /* Verde oficial de WhatsApp */
+  color: #ffffff;
+  border-radius: 50%;
   text-align: center;
-  padding: 20px;
-  font-size: 14px;
-  color: #777;
+  font-size: 32px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.whatsapp-float:hover {
+  transform: scale(1.1); /* Se agranda un poco al pasar el mouse */
+  box-shadow: 0 6px 20px rgba(37, 211, 102, 0.4);
+  color: #ffffff;
+}
+
+/* Ajuste móvil para que no estorbe en pantallas chicas */
+@media (max-width: 768px) {
+  .whatsapp-float {
+    width: 50px;
+    height: 50px;
+    bottom: 20px;
+    right: 20px;
+    font-size: 28px;
+  }
 }
 
 /* Responsive */
